@@ -1,0 +1,116 @@
+@font-face {
+    font-family: 'BebasNeueRegular';
+    src: url('fonts/BebasNeue-webfont.eot');
+    src: url('fonts/BebasNeue-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/BebasNeue-webfont.woff') format('woff'),
+         url('fonts/BebasNeue-webfont.ttf') format('truetype'),
+         url('fonts/BebasNeue-webfont.svg#BebasNeueRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+.demo-wrapper * { 
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box; 
+	box-sizing: border-box; 
+}
+.demo-wrapper {
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.demo-wrapper h1, 
+.demo-wrapper h2, 
+.demo-wrapper h3 {
+	font-family: 'BebasNeueRegular';
+}
+.demo-wrapper header {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	border-top: 10px solid #E74C3C;
+	border-bottom: 5px solid #95A5A6;
+	margin-bottom: 50px;
+}
+.demo-wrapper header h1 {
+	font-size: 4em;
+	margin-bottom: 0;
+	font-weight: normal;
+}
+.demo-wrapper header h1 span {
+	color: #E74C3C;
+}
+.demo-wrapper header h2 {
+	font-size: 2em;
+	margin-top: 0;
+	color: #95A5A6;
+	font-weight: normal;
+}
+.demo-wrapper h3 {
+	font-size: 1.85em;
+	font-weight: normal;
+}
+.demo-wrapper article,
+.demo-wrapper aside  {
+	font-family: 'Georgia', serif;
+	font-size: 1.2em;
+	line-height: 1.5em;
+}
+.demo-wrapper article {
+	-webkit-flow-into: article;
+}
+.demo-wrapper aside {
+	font-size: 1.3em;
+	line-height: 1.7em;
+	color: #95A5A6;
+	margin-left: 0;
+	margin-right: 0;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	-webkit-flow-into: aside;
+}
+.demo-wrapper article > p:nth-of-type(1):first-letter {
+	font-size: 5em;
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+.demo-wrapper img {
+	-webkit-filter: grayscale(100%);  
+}s
+
+/* Regions */
+.demo-wrapper .regions {
+	width: 100%;
+	margin-bottom: 100px;
+}
+.demo-wrapper .region {
+	float: left;
+}
+.demo-wrapper #region-1,
+.demo-wrapper #region-2,
+.demo-wrapper #region-4 {
+	-webkit-flow-from: article;
+}
+.demo-wrapper #region-3 {
+	-webkit-flow-from: aside;	
+}
+.demo-wrapper #region-1,
+.demo-wrapper #region-4  {
+	width: 100%;
+	height: 250px;
+}
+.demo-wrapper #region-4 {
+	height: 400px;
+}
+.demo-wrapper #region-2,
+.demo-wrapper #region-3 {
+	width: 50%;
+	height: 700px;
+	margin-bottom: 25px;
+}
+.demo-wrapper #region-2 {
+	padding-right: 50px;
+	border-right: 1px solid #ECF0F1;
+}
+.demo-wrapper #region-3 {
+	padding-left: 50px;
+}
